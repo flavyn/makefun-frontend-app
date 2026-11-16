@@ -1,4 +1,8 @@
-﻿# make.fun lens
+# make.fun lens
+
+[![make.fun · makefun-frontend-01](https://make.fun/badge/makefun-frontend-01.svg)](https://make.fun/bounty/makefun-frontend-01)
+[![rank](https://make.fun/badge/makefun-frontend-01/flavyn/makefun-frontend-app/rank.svg)](https://make.fun/bounty/makefun-frontend-01/leaderboard)
+[![reward](https://make.fun/badge/makefun-frontend-01/flavyn/makefun-frontend-app/reward.svg)](https://make.fun/bounty/makefun-frontend-01)
 
 A fast, read-only frontend for [make.fun](https://make.fun)'s live bounties, built as
 plain static files: no build step, no framework, no dependency beyond the browser.
