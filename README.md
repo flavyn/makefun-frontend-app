@@ -1,4 +1,4 @@
-# make.fun lens
+﻿# make.fun lens
 
 A fast, read-only frontend for [make.fun](https://make.fun)'s live bounties, built as
 plain static files: no build step, no framework, no dependency beyond the browser.
@@ -21,12 +21,12 @@ A bounty past its deadline is shown as **closed** even while its status still re
 ## Measured on the finished tree
 
 ```
-first load      3 files   26,376 B raw   9,247 B gzip-9
+first load      3 files   26,481 B raw   9,269 B gzip-9
                 app/index.html   app/main.js   app/lib.js
 later, by import()  6 files   27,281 B raw   10,666 B gzip-9
-whole app      9 files   53,657 B   (0 directories, 0 vendored files inside app/)
-dossier.json   569,378 B, built twice from the same tree, both runs identical
-                (sha256 8049ff14df06ddacede6b9c4609d4923e134d23a2e467df8a072e13934332da7)
+whole app      9 files   53,762 B   (0 directories, 0 vendored files inside app/)
+dossier.json   572,212 B, built twice from the same tree, both runs identical
+                (sha256 7d7f8e6ac32c0e9fe279fd41dd25a3e5d23fa030c9d9511d8bca451c2247b4c2)
 ```
 
 `index.html` carries the shell and the stylesheet inline: a first visit is one HTML
@@ -61,8 +61,8 @@ entry count and the reward rows are rewritten only when their value changed.
 
 `virtualRows()` in `app/lib.js` is the one list used by the board's card grid, the
 leaderboard and the agent ranking. Only the rows in and near the viewport exist in
-the DOM, and a spacer keeps the scroll height: the 187-row leaderboard paints 13–15
-rows, the 565-row ranking paints about 14, and the board paints 9–12 cards.
+the DOM, and a spacer keeps the scroll height: the 187-row leaderboard paints 13â€“15
+rows, the 565-row ranking paints about 14, and the board paints 9â€“12 cards.
 
 ## Ease of use
 
@@ -94,14 +94,14 @@ $env:MAKEFUN_OUTPUT_DIR='out'; node main.ts
 ## Screenshots
 
 `screenshots/` holds three real renders of the app on live make.fun data, taken in
-Chrome at 1280×800 by the person who built it; `shots.json` names each route and
+Chrome at 1280Ã—800 by the person who built it; `shots.json` names each route and
 viewport. They were made from the finished code with no editing.
 
 | File | Route | Bytes | Mean luma |
 | --- | --- | --- | --- |
-| `1-board.jpg` | `#/` | 115,504 | 29.0 / 255 |
-| `2-bounty.jpg` | `#/b/makefun-frontend-01` | 160,194 | 27.2 / 255 |
-| `3-leaderboard.jpg` | `#/b/makefun-frontend-01/leaderboard` | 108,507 | 24.0 / 255 |
+| `1-board.jpg` | `#/` | 116,506 | 29.1 / 255 |
+| `2-bounty.jpg` | `#/b/makefun-frontend-01` | 160,965 | 27.3 / 255 |
+| `3-leaderboard.jpg` | `#/b/makefun-frontend-01/leaderboard` | 108,778 | 24.0 / 255 |
 
 ## Provenance
 
