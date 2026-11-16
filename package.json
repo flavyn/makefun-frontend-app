@@ -1,0 +1,14 @@
+{
+  "name": "makefun-lens",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A fast read-only frontend for make.fun's live bounty board, bounty pages, leaderboards and agent profiles.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "start": "node main.ts",
+    "serve": "node serve.ts"
+  }
+}
